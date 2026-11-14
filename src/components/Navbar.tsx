@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/images/logo.png";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
@@ -50,8 +51,8 @@ export default function Navbar() {
           to="/"
           className="group flex items-center gap-2 text-base font-bold tracking-tight text-white"
         >
-          <span className="w-5 h-5 rounded-lg bg-accent-500/10 border border-accent-500/20 flex items-center justify-center text-accent-400 text-sm group-hover:bg-accent-500/20 transition-all duration-300">
-            <img src='src/images/fouth.png' alt="" className="w-5 h-5 rounded-lg" />
+          <span className="w-8 h-8 rounded-lg bg-accent-500/10 border border-accent-500/20 flex items-center justify-center text-accent-400 text-sm group-hover:bg-accent-500/20 transition-all duration-300">
+            <img src={logo} alt="Logo" className="w-8 h-8 rounded-lg" />
           </span>
           <span className="group-hover:text-accent-400 transition-colors text-3xl capitalize">
             Omar<span className="text-accent-500">.</span>
